@@ -1,0 +1,66 @@
+.login-form
+{
+  padding-top:10% ;
+  /* calc(50-25%) */
+  max-height:50%;
+}
+
+label
+{
+  margin-left: 40%;
+  text-align: center;
+}
+
+h4
+{
+  margin-bottom: 0%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0, 0, 0, 0.1),
+               0px 18px 23px rgba(0, 0, 0, 0.1);
+
+}
+
+form
+{
+  margin-left: 25%;
+  width: 50%;
+}
+
+
+html
+{
+  height: 100%;
+}
+
+
+body
+{
+  background-image: url("../image/test1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 100%;
+
+}
+
+.wrong
+{
+  margin-left: 35%;
+  margin-top: 5%;
+  border-color: red;
+  width: 30%;
+  text-align: center;
+}
+
+button
+{
+  margin-left: 40%;
+  width: 20%;
+}
+
+
+hr
+{
+  border-top: 1px solid #c4c5c6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

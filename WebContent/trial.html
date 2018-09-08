@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>JSP Page</title>
+ <script type="text/javascript">
+
+  function loadXMLDoc()
+  {
+    var xmlhttp;
+    // var config=document.getElementById('configselect').value;
+    var url="ServletShitWorks";
+    if (window.XMLHttpRequest)
+    {
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+        }
+    }
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+</script>
+
+</head>
+
+<body>
+<h2 align="center">Click the button below to show</h2>
+<button type="button" onclick='loadXMLDoc()'> Click here! </button>
+<br><br>
+<div id="myDiv"style="border:2px black solid">
+<h4>Get data here</h4>
+</div>
+</body>
+</html>
